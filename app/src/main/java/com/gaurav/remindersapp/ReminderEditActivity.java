@@ -19,6 +19,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+/**
+ * The activity representing the screen when you edit/create a reminder
+ */
 public class ReminderEditActivity extends FileActivity  implements View.OnClickListener,
         DatePickerFragment.DatePickerDialogListener, TimePickerFragment.TimePickerDialogListener {
     int year ,month, hourOfDay, minute, dayOfMonth;

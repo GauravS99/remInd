@@ -10,6 +10,9 @@ import android.widget.TimePicker;
 
 import java.util.Calendar;
 
+/**
+ * A fragment that extends DialogFragment is needed to display the Date Picker
+ */
 public class TimePickerFragment extends android.support.v4.app.DialogFragment implements TimePickerDialog.OnTimeSetListener{
 
     private TimePickerDialogListener listener;

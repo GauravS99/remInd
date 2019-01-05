@@ -13,12 +13,20 @@ import android.widget.TimePicker;
 import java.util.Calendar;
 import java.util.Observable;
 
+/**
+ * A fragment that extends DialogFragment is needed to display the Date Picker
+ */
 public class DatePickerFragment extends android.support.v4.app.DialogFragment
         implements DatePickerDialog.OnDateSetListener{
 
     private int year, month, day;
     private DatePickerDialogListener listener;
 
+
+    /**
+     * Makes sure the activity is a DatePickerDialogListener
+     * @param context the context
+     */
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -33,6 +41,11 @@ public class DatePickerFragment extends android.support.v4.app.DialogFragment
         }
     }
 
+    /**
+     * Returns a DatePickerDialog after setting it up
+     * @param savedInstanceState the saved instance state
+     * @return a set up datePickerDialog
+     */
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the current time as the default values for the picker
@@ -53,6 +66,10 @@ public class DatePickerFragment extends android.support.v4.app.DialogFragment
         listener.onFinishedDatePicker(year, month, dayOfMonth);
     }
 
+
+    /**
+     * Activities that display this fragment must be DatePickerDialogListener
+     */
     public interface DatePickerDialogListener {
         void onFinishedDatePicker(int year, int month, int dayOfMonth);
     }

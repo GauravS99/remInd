@@ -22,7 +22,7 @@ public class FileActivity extends AppCompatActivity {
     }
 
     /**
-     * Save the board manager to fileName.
+     * Save the reminders list
      */
     protected void saveToFile() {
         try {

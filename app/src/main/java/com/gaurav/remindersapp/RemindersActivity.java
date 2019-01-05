@@ -16,6 +16,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/**
+ * The activity representing the main screen where you see all the reminders
+ */
 public class RemindersActivity extends FileActivity implements RemindersAdapter.ItemListener {
 
     private RemindersAdapter adapter;

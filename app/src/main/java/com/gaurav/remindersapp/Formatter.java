@@ -16,6 +16,9 @@ public class Formatter {
     public static boolean militaryTime = false;
 
 
+    /**
+     * Uses locale to set up time format
+     */
     public static void setupTimeSettings(){
 
         Locale current = Locale.getDefault();
@@ -36,9 +39,12 @@ public class Formatter {
 
     }
 
-
+    /**
+     * Converts a Long time to a human readable date
+     * @param time the epoch time
+     * @return a human readable date
+     */
     public static String getDate(Long time){
-
         if (time == null)
             return "";
 
@@ -57,6 +63,11 @@ public class Formatter {
 
     }
 
+    /**
+     * Converts a epoch time to a human readable time
+     * @param time the epoch time
+     * @return human readable time
+     */
     public static String getTime(Long time) {
         if (time == null)
             return "";

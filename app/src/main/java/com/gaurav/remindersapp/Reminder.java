@@ -2,6 +2,9 @@ package com.gaurav.remindersapp;
 
 import java.io.Serializable;
 
+/**
+ * A class representing a reminder
+ */
 public class Reminder implements Serializable {
     Long time;
     String description;

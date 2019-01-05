@@ -13,6 +13,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+/**
+ * Adapts a list of Reminders to be displayed in RecyclerVieww
+ */
 public class RemindersAdapter extends RecyclerView.Adapter<RemindersAdapter.ReminderHolder>{
     private static final String TAG = "ChatRoomsAdapter";
 
